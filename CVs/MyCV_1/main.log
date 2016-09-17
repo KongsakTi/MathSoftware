@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.9.17)  18 SEP 2016 01:34
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.9.17)  18 SEP 2016 01:55
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -222,7 +222,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.117 seconds)
+luaotfload | main : initialization completed in 0.114 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1212,15 +1212,15 @@ LaTeX Font Info:    ... okay on input line 26.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(28.45274pt, 227.62207pt, 341.43306pt)
-* v-part:(T,H,B)=(35.56593pt, 773.91498pt, 35.56593pt)
+* h-part:(L,W,R)=(28.45274pt, 284.52757pt, 284.52756pt)
+* v-part:(T,H,B)=(28.45274pt, 781.02817pt, 35.56593pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=227.62207pt
-* \textheight=773.91498pt
+* \textwidth=284.52757pt
+* \textheight=781.02817pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-73.70406pt
+* \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1347,20 +1347,30 @@ Package biblatex Info: Reference segment=0 on input line 26.
 LaTeX Font Warning: Font shape `EU2/FontAwesome(0)/bx/n' undefined
 (Font)              using `EU2/FontAwesome(0)/m/n' instead on input line 45.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 45.
+<ProfilePic.png, id=4, 225.84375pt x 225.84375pt>
+File: ProfilePic.png Graphic file (type png)
+ <use ProfilePic.png>
+Package luatex.def Info: ProfilePic.png used on input line 45.
+(luatex.def)             Requested size: 225.84319pt x 225.84319pt.
+
 (./sidebar.tex
-Overfull \hbox (14.85648pt too wide) in paragraph at lines 12--12
+Overfull \hbox (29.85648pt too wide) in paragraph at lines 12--12
  [][] 
  []
 
 
-Overfull \hbox (121.39494pt too wide) in paragraph at lines 22--22
+Overfull \hbox (57.324pt too wide) in paragraph at lines 21--21
  [][] 
  []
 
 ) [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./main.aux)
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./Profile
+Pic.png>] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1370,24 +1380,24 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36365 strings out of 495119
+ 36372 strings out of 495119
  125171,1144653 words of node,token memory allocated
- 9674 words of node memory still in use:
-   117 hlist, 15 vlist, 4 rule, 12 disc, 17 local_par, 452 glue, 7 kern, 20 pena
-lty, 144 glyph, 670 attribute, 52 glue_spec, 670 attribute_list, 1 write, 326 pd
-f_literal, 28 pdf_colorstack nodes
-   avail lists: 1:2,2:416,3:436,4:103,5:53,6:1162,7:857,8:49,9:294,10:12,11:116
- 38920 multiletter control sequences out of 65536+600000
+ 8418 words of node memory still in use:
+   105 hlist, 14 vlist, 4 rule, 5 disc, 15 local_par, 407 glue, 3 kern, 17 penal
+ty, 79 glyph, 614 attribute, 52 glue_spec, 614 attribute_list, 1 write, 298 pdf_
+literal, 26 pdf_colorstack nodes
+   avail lists: 1:2,2:528,3:441,4:103,5:49,6:1097,7:854,8:50,9:306,10:14,11:109
+ 38923 multiletter control sequences out of 65536+600000
  52 fonts using 3094511 bytes
- 64i,10n,87p,1128b,895s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 64i,10n,87p,1128b,894s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2016/texmf-dist/fonts/truetype/public/lato/Lato-Reg.ttf></us
 r/local/texlive/2016/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.ot
 f></usr/local/texlive/2016/texmf-dist/fonts/truetype/public/lato/Lato-Bol.ttf></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on main.pdf (1 page, 52795 bytes).
+Output written on main.pdf (1 page, 64356 bytes).
 
-PDF statistics: 40 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 41 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
