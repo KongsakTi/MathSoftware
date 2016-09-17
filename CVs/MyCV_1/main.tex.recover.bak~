@@ -1,0 +1,7 @@
+% Compile with LuaLaTeX for best results.
+
+% marginparwidth 	-> right column length
+\geometry{margin=1.25cm}
+\setmainfont{Lato}
+
+\end{document}
