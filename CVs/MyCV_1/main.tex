@@ -7,13 +7,60 @@
 \setmainfont{Lato}
 
 % Colors List
-\definecolor{DarkMaroon}{HTML}{C00000}
+\definecolor{DarkRed}{HTML}{C00000}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\colorlet{heading}{DarkMaroon}
-\colorlet{accent}{DarkMaroon}
+\definecolor{NavyBlue}{HTML}{2471A3}
+\definecolor{DarkMaroon}{HTML}{A60000}
+\definecolor{DecentRed}{HTML}{E00000}
+
+\definecolor{Green}{HTML}{2ECC71}
+\definecolor{Yellow}{HTML}{F4D03F}
+\definecolor{Purple}{HTML}{D2B4DE}
+\definecolor{Red}{HTML}{E74C3C}
+\definecolor{Blue}{HTML}{5DADE2}
+\definecolor{Black}{HTML}{000000}
+
+\definecolor{DecentYellow}{HTML}{FFD600}
+\definecolor{DarkYellow}{HTML}{E8A000}
+\definecolor{Orange}{HTML}{F39C12}
+\definecolor{HotOrange}{HTML}{E8510C}
+\definecolor{HotRed}{HTML}{FF1A00}
+%\definecolor{DecentYellow}{HTML}{FF1A17}
+%\definecolor{DarkYellow}{HTML}{0084B2}
+%\definecolor{Orange}{HTML}{2A94DB}
+%\definecolor{HotOrange}{HTML}{FF4840}
+%\definecolor{HotRed}{HTML}{B21709}
+
+
+\definecolor{LightRed}{HTML}{FF4040}
+\definecolor{PinkRed}{HTML}{FF7373}
+\definecolor{BrightRed}{HTML}{FF0000}
+\definecolor{DarkGrey}{HTML}{34495E}
+\definecolor{SLightGrey}{HTML}{F0F3F4}
+
+\colorlet{heading}{DarkRed}
+\colorlet{headingSub}{NavyBlue}
+\colorlet{headingLine}{DarkMaroon}
+\colorlet{headingIcons}{DarkGrey}
+\colorlet{icons}{DecentRed}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
+
+\colorlet{Green}{Green}
+\colorlet{Yellow}{Yellow}
+\colorlet{Purple}{Purple}
+\colorlet{Red}{Red}
+\colorlet{Blue}{Blue}
+
+\colorlet{DecentYellow}{DecentYellow}
+\colorlet{DarkYellow}{DarkYellow}
+\colorlet{Orange}{Orange}
+\colorlet{HotOrange}{HotOrange}
+\colorlet{HotRed}{HotRed}
+
+% Set page background color
+%\pagecolor{DarkGrey}
 
 % Bullets for itemize and rating marker
 \renewcommand{\itemmarker}{{\small\textbullet}}
@@ -49,31 +96,32 @@
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
-\cvsection[sidebar]{Education}
+\cvsection[sidebar]{Education}{\faMortarBoard}
 
 \cvevent{Mahidol University International College}{Bachelor of Science in Computer Science}{January 2013 -- December 2017}{}
 \begin{itemize}
 	\item First Class Honors
 	\item Applied Mathematics Minor
 	\item Programming Club President
-	\item GPA 3.61
+	\item GPA 3.61/4.00
 \end{itemize}
 
-\medskip
+\bigskip
 
-\cvsection{Internship}
+\cvsection{Internship}{\faSuitcase}
 
-\cvevent{Job Title 1}{Company 1}{Month 20XX -- Ongoing}{Location}
+%\Large\color{icons}\faLaptop\\
+\cvevent{Quatitative Analysis Aprentice}{Bualuang Securities}{July 2016 -- September 2016}{Bankok, Thailand}
 \begin{itemize}
-	\item Job description 1
-	\item Job description 2
+	\item Program a backtesting system and trade based on risk level.
+	\item Analyzing theory and time-series correlations.
 \end{itemize}
 
-\divider
+\bigskip
 
-\cvsection{Achievement}
+\cvsection{Achievement}{\faTrophy}
 
-\cvachievement{\faTrophy}{ACM-ICPC Programming Contest}{Multi-tiered competitive programming among the universities of the world.}
+\cvachievement{\faBookmark}{ACM-ICPC Programming Contest}{Multi-tiered competitive programming among the universities of the world.}
 \begin{itemize}
 	\item $15^{th}$ Place out of 100 teams, ACM-ICPC Thailand National Programming Contest 2015
 	\item $37^{th}$ Place out of 67 teams ($12^{th}$ out of 38 Thailand teams), ACM-ICPC Asia Phuket Regional Programming Contest 2015
@@ -81,7 +129,7 @@
 
 \divider
 
-\cvachievement{\faTrophy}{Young Financial Star Competition}{Financial planning competition organized by The Stock Exchange of Thailand}
+\cvachievement{\faBookmark}{Young Financial Star Competition}{Financial planning competition organized by The Stock Exchange of Thailand}
 \begin{itemize}
 	\item TBA
 \end{itemize}

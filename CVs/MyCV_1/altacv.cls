@@ -18,8 +18,10 @@
 \RequirePackage{fontawesome,academicons}
 \RequirePackage{xcolor}
 
-\colorlet{accent}{blue!70!black}
+\colorlet{icons}{blue!70!black}
 \colorlet{heading}{black}
+\colorlet{headingLine}{black}
+\colorlet{headingIcon}{black}
 \colorlet{emphasis}{black}
 \colorlet{body}{black!80!white}
 \newcommand{\itemmarker}{{\small\textbullet}}
@@ -51,7 +53,7 @@
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
 
-\newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{2em}}}
+\newcommand{\printinfo}[2]{\mbox{\textcolor{icons}{#1}\hspace{0.5em}#2\hspace{2em}}}
 
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
@@ -74,7 +76,7 @@
     \raggedright\color{emphasis}%
     {\Huge\bfseries\MakeUppercase{\@name}\par}
     \medskip
-    {\large\bfseries\color{accent}\@tagline\par}
+    {\large\bfseries\color{icons}\@tagline\par}
     \medskip
     {\footnotesize\bfseries\@personalinfo\par}
     \ifdef{\@photodiameter}{%
@@ -85,13 +87,13 @@
   \endgroup\medskip
 }
 
-\renewenvironment{quote}{\color{accent}\itshape\large}{\par}
+\renewenvironment{quote}{\color{icons}\itshape\large}{\par}
 
-\newcommand{\cvsection}[2][]{%
+\newcommand{\cvsection}[3][]{%
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}% 
-  {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
-  {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
+  {\LARGE\color{headingIcons}{#3}}{\hspace{0.1cm}}{\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
+  {\color{headingLine}\rule{\linewidth}{2pt}\par}\medskip
 }
 
 \newcommand{\cvsubsection}[1]{%
@@ -102,17 +104,17 @@
 \newcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1\par}
   \smallskip
-  \textbf{\color{accent}#2}\par
+  \textbf{\color{headingSub}#2}\par
   \smallskip
-  {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
-  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
+  {\color{icons}\faCalendar}{\small\makebox[0.5\linewidth][l]{\hspace{0.5em}#3}%
+  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{{\color{icons}\faMapMarker}\hspace{0.5em}#4}}\par}
   \medskip
 }
 
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
-  \multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
-  & #3
+  \multirow{2}{*}{\Large\color{icons}#1} & \bfseries\textcolor{emphasis}{#2}\\
+  & \textcolor{headingSub}{#3}
   \end{tabularx}%
   \smallskip
 }
@@ -124,7 +126,7 @@
 \newcommand{\cvskill}[2]{%
 \textcolor{emphasis}{\textbf{#1}}\hfill
 \foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\faCircle}}\par%
+  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{icons}}\faCircle}}\par%
 }
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
@@ -184,7 +186,7 @@
 \newcommand{\cvref}[3]{%
   \smallskip
   \textcolor{emphasis}{\textbf{#1}}\par
-  \begin{description}[font=\color{accent},style=multiline,leftmargin=1.25em]
+  \begin{description}[font=\color{icons},style=multiline,leftmargin=1.25em]
   \item[\emailsymbol] #2
   \item[\small\mailsymbol] #3
   \end{description}
