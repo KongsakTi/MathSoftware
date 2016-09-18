@@ -51,7 +51,7 @@
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
-\newcommand{\mailsymbol}{\faEnvelope}
+\newcommand{\mailsymbol}{\faHome}
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{icons}{#1}\hspace{0.5em}#2\hspace{2em}}}
 
