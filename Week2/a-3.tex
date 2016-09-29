@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{outlines}
+\usepackage{multirow}
+
+\begin{document}
+This is the second assignment. My name is [yourname] and my student ID is [yourstudentid]
+
+\underline{About this document:}
+
+\begin{enumerate}
+\item This document uses the font size 12pt.
+\item It is created to help you practice typing lists and tables.
+\end{enumerate}
+
+
+Do you like bullet points? I don't.
+
+
+\begin{enumerate}
+\item[$\bullet$] They can get \textbf{very} repetitive.
+\item[$\star$] Even when I change the bullet symbol it doesn't feel special.
+\end{enumerate}
+
+I'm making this last list with the \textbf{outline} environment. (This requires the \textbf{outlines} package.) Why use this environment?
+
+\begin{outline}
+\1 Because nesting
+\2 is so easy
+\1 with this particular
+\2 environment.
+\3 other ways to do nesting are much more cumbersome.
+\end{outline}
+
+The table below is flushrighted.
+\begin{flushright}
+\begin{tabular}{|l|c|} \hline
+\textbf{Items} & \textbf{Cost}\\ \hline
+loaf of bread & \$3.5\\
+toothpaste & \$1.79\\
+dental floss & \$3.9\\ \hline
+\end{tabular}
+\end{flushright}
+
+The table below is in the middle.
+
+\begin{center}
+\begin{tabular}{|l|c|c|r|} \hline
+upper left & \multicolumn{2}{c|}{\textbf{center}} & upper right \\ \hline
+\multirow{2}{*}{left} &  & \textit{the middle} & \multirow{2}{*}{right} \\ \cline{2-3} 
+& \texttt{in the middle} & &  \\ \hline
+lower left & \multicolumn{2}{c|}{\textbf{\textit{nothing here}}} & lower right \\ \hline
+\end{tabular}
+\end{center}
+
+\end{document}

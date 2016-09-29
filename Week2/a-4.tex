@@ -1,0 +1,111 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{amsmath}
+\begin{document}
+
+This is the $3^{rd}$ assignment. My name is [yourname] and my student ID is [yourstudentid]\\
+\underline{About this document:}
+
+\begin{enumerate}
+\item This document uses the font size 10pt.
+\item This document has a 1.2-inch margin all the way around.
+\end{enumerate}
+
+$ \mbox{Aside from } 4 \times 4 = 16 \mbox{ , this is my favorite equation:}$
+
+
+\begin{equation}
+\mbox{Area of a triangle} = \frac{b \cdot h}{2}.
+\end{equation}
+
+
+Mathematicians are often interested in this integral:
+$$ \int e^{x^{2}} \, dx.$$
+
+\noindent This integral is actually \textit{unsolvable}. Solving a system of linear equation is usually much easier.
+\begin{align}
+2x + 3y - 6z &= 4\\
+2y + 5z &= -2\\
+x - y + 4z &= 1.
+\end{align}
+
+% \begin{alignat}{4}
+% 2&x& \,+\, 3&y& \,-\, 6&z& &= 4\\
+% &&  \, \,   2&y& \,+\, 5&z& &= -2\\
+% &x& \,-\, &y& \,+\, 4&z& &= 1.
+% \end{alignat}
+
+
+
+\noindent This system can be written in a matrix form like this:
+
+$$
+\begin{bmatrix} 
+ 2 &  3 & -6 &  4\\
+ 0 &  2 &  5 & -2\\
+ 1 & -1 &  4 &  1\\
+\end{bmatrix}
+.$$
+
+The last column in the previous matrix is special, and we can mark it off using the \textbf{array} environment. All of my columns are still center-aligned.
+
+$$
+\begin{bmatrix}
+\begin{array}{c c c|c}
+2 & 3 & -6 & 4\\
+0 & 2 & 5 & -2\\
+1 & -1 & 4 & 1
+\end{array}
+\end{bmatrix}
+$$
+
+\vfill
+The following formulas are written in two columns. You'll notice that this bumps up against the bottom of this page. How did I do it \footnote{Hint: vfill}? I think the alignment here is beautiful, don't you? I put 1 inch between columns.
+
+\begin{alignat}{2}
+A &= \pi r^2 \hspace{1in} B &= \beta^2 \\
+C &= 2\pi r \hspace{1in} D &= 4x
+\end{alignat}
+
+\newpage
+Here is a well-known formula:
+$$\sum_{i=1}^{n} i = \frac{n(n + 1)}{2}.$$
+
+This formula is not as well known, but it is easy to verify:
+
+$$\int_{0}^{10} x^2\, dx = \frac{1000}{3}.$$
+
+Finally, here is a simple matrix multiplication calculation:
+
+$$
+\begin{bmatrix} 
+ 1 &  0 \\
+ 2 &  3
+\end{bmatrix}
+\begin{bmatrix} 
+  0 & 5 \\
+ -2 & 2
+\end{bmatrix}
+=
+\begin{bmatrix} 
+  0 & 5 \\
+ -6 & 16
+\end{bmatrix}
+.
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
