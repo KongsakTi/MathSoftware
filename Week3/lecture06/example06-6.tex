@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\begin{document}
+
+\section{The First Section}
+\setcounter{theorem}{3}
+\setcounter{equation}{20}
+\begin{theorem} \label{T:first}
+An important theorem.
+\end{theorem}
+
+Here's an equation:
+\begin{equation} \label{E:area}
+A = \pi r^2.
+\end{equation}
+
+It might surprise you to know that we do not use \eqref{E:area} to prove Theorem \ref{T:first}.
+
+\begin{equation}
+A = \pi r^2 \tag{area of a circle}
+\end{equation}
+
+\begin{equation}
+A = \pi r^2 \tag{$\star$}
+\end{equation}
+
+\end{document}

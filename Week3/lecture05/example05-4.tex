@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\fancypagestyle{math233}
+  {
+  \lhead{Math 233} \chead{Intersession 2012} \rhead{Ryan Higginbottom}
+  \lfoot{} \cfoot{} \rfoot{\thepage}
+  \renewcommand{\headrulewidth}{.25pt}
+  \renewcommand{\footrulewidth}{0pt}
+  }
+
+\fancypagestyle{math233alt}
+  {
+  \lhead{Math 233} \chead{} \rhead{Ryan Higginbottom}
+  \lfoot{Page \thepage} \cfoot{} \rfoot{Example}
+  \renewcommand{\headrulewidth}{.25pt}
+  \renewcommand{\footrulewidth}{.5pt}
+  }
+
+\pagestyle{math233}
+\begin{document}
+This is my first page.
+\newpage
+This is my second page. \thispagestyle{math233alt}
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{main}{Main Theorem}
+\newtheorem{proposition}{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{remark}
+\newtheorem*{notation}{Notation}
+
+\pagestyle{plain}
+\begin{document}
+
+\begin{main}
+This theorem is the point of the whole paper.
+\end{main}
+
+\section{The First Section}
+
+\begin{notation}
+We should establish our notation before we move on to the Lemma.
+\end{notation}
+
+\begin{lemma}
+A lemma usually comes before the theorem.
+\end{lemma}
+
+\begin{theorem}
+This theorem kicks things off.
+\end{theorem}
+
+\begin{corollary}
+A corollary comes after the theorem, for the most part.
+\end{corollary}
+
+\begin{proposition}
+This is not numbered consecutively.
+\end{proposition}
+
+\section{Another Section}
+
+\begin{theorem}
+You can see that the numbering continues here.
+\end{theorem}
+
+\begin{corollary}
+And it continues consecutively here.
+\end{corollary}
+
+\end{document}
