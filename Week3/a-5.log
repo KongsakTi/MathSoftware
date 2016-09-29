@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.9.17)  29 SEP 2016 17:20
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.9.17)  29 SEP 2016 17:27
  restricted system commands enabled.
 **a-5.tex
 (./a-5.tex
@@ -143,9 +143,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 43.
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-Missing character: There is no ’ (U+2019) in font cmr10!
-] (./a-5.aux))
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./a-5.
+aux))
 
 Here is how much of LuaTeX's memory you used:
  959 strings out of 495119
@@ -165,7 +164,7 @@ texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on a-5.pdf (1 page, 103569 bytes).
+Output written on a-5.pdf (1 page, 103711 bytes).
 
 PDF statistics: 44 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
