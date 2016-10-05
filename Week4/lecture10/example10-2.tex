@@ -1,0 +1,66 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\usecolortheme{seagull}
+\usecolortheme{rose}
+%\usecolortheme{whale}
+
+\title{Beamer Test \#2}
+\author{Your name}
+\institute{W\&J College}
+\date{January 18, 2012}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{February}
+
+\begin{frame}
+  \frametitle{A Very Nice Slide}
+In this example, I'm using the \texttt{CambridgeUS} theme. \pause
+
+\vspace{.2in}
+
+I'm also using the \texttt{seagull} color theme and the \texttt{rose} color for inner elements.  (There
+was a 0.2-inch space before this paragraph.)
+\end{frame}
+
+\begin{frame}
+\frametitle{Experimenting with Overlays (1)}
+
+Are you familiar with the way the \texttt{pause} \pause command works?
+
+\onslide<2>{It's very easy to use the \texttt{onslide} commands too.} \pause
+
+Just practice!
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Experimenting with Overlays (2)}
+
+\begin{enumerate}
+\item<1-2> This will be here for a little while.
+\item<2-3> This will be here one slide longer.
+\item<4> If you do this too much, it becomes disorienting.
+\end{enumerate}
+
+%\vspace{.2in}
+%
+%Overlays within \texttt{itemize} are also
+%\begin{itemize}
+%\item<4> easy to understand;
+%\item<5-6> easy to replicate; and
+%\item<4,6> easy to explain.
+%\end{itemize}
+\end{frame}
+
+
+\end{document}

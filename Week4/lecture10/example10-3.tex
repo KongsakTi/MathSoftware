@@ -1,0 +1,59 @@
+\documentclass[style=default]{powerdot}
+\pdsetup{palette=red}
+\usepackage{amsthm}
+\title{Testing Out Powerdot}
+\author{Ryan Higginbottom}
+\date{\today}
+
+\theoremstyle{plain}
+\newtheorem*{theorem}{Theorem}
+
+\begin{document}
+
+\maketitle
+
+\begin{slide}{An Overview}
+\tableofcontents[content=sections]
+\end{slide}
+
+\section{The First Section}
+
+\begin{slide}{The Big Theorem}
+  \begin{theorem}[The Pythagorean Theorem]
+  In a right triangle with sides $a$ and $b$ and hypotenuse $c$, the following relationship holds:
+  \[
+    a^2+b^2=c^2.
+  \]
+  \end{theorem}
+\end{slide}
+
+\begin{slide}{Overlays}
+It is easy to demonstrate \pause the \texttt{pause} command. \pause
+
+\vspace{.2in}
+
+Overlays within \texttt{itemize} are also
+\begin{itemize}
+\item<4> easy to understand;
+\item<5-6> easy to replicate; and
+\item<4,6> easy to explain.
+\end{itemize}
+
+\end{slide}
+
+\begin{slide}{One More on Overlays}
+\onslide{1,3,5-}{Playing around with overlays too much} \onslide{2,4,5-}{can make my
+head hurt.}
+
+\vspace{.3in}
+
+\Large \onslide{6-}{Changing text size is not a problem in \texttt{powerdot}.}
+\normalsize
+
+\vspace{.4in}
+
+\onslide{7}{Most \LaTeX\ commands are fair game.}
+
+\end{slide}
+
+\end{document}

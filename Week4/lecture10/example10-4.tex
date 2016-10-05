@@ -1,0 +1,50 @@
+\documentclass[style=fyma]{powerdot}
+\pdsetup{palette=green}
+\usepackage{amsthm,amsmath}
+\title{Powerdot Example \#2}
+\author{Your name}
+\date{January 18, 2012}
+
+\theoremstyle{plain}
+\newtheorem*{theorem}{Theorem}
+
+\begin{document}
+
+\maketitle
+
+\begin{slide}{An Overview}
+\tableofcontents[content=sections]
+\end{slide}
+
+\section{Our First Section}
+
+\begin{slide}{The Big Theorem}
+  For this example I'm using the \texttt{fyma} style \pause with the \texttt{green} palette. \pause
+
+\vspace{.5in} I skipped 0.5 inches there.
+\end{slide}
+
+\begin{slide}{Trying out Overlays}
+
+\onslide{1-2}{We used} \onslide{2}{\texttt{pause} on the previous slide, not here though.  Here we only
+use \texttt{onslide}.}
+
+\vspace{.2in}
+
+\onslide{1,3-}{Here is the easiest matrix in the world to type:
+\begin{equation}
+\begin{pmatrix}
+1 & 2 \\ 3 & 4
+\end{pmatrix}
+\end{equation}}
+
+%Overlays within \texttt{itemize} are also
+%\begin{itemize}
+%\item<4> easy to understand;
+%\item<5-6> easy to replicate; and
+%\item<4,6> easy to explain.
+%\end{itemize}
+
+\end{slide}
+
+\end{document}
