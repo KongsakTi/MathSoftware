@@ -93,7 +93,7 @@
 \newcommand{\cvsection}[3][]{%
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}% 
-  {\LARGE\color{headingIcons}{#3}}{\hspace{0.1cm}}{\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
+  {\LARGE\color{headingIcons}{#3}}{\hspace{0.1cm}}{\color{heading}\Large\bfseries\MakeUppercase{#2}}\\[-1ex]%
   {\color{headingLine}\rule{\linewidth}{2pt}\par}\medskip
 }
 
