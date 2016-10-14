@@ -1,0 +1,8 @@
+AltCombine:=proc(A, B)
+local i, C:
+C:=[];
+for i from 1 to nops(A) do
+	C:= [op([op(C),A[i]]),B[i]]
+od:
+return(C);
+end:

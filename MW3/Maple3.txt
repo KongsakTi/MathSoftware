@@ -1,0 +1,68 @@
+test:=proc()
+return(1);
+end:
+
+#input: number n
+#output: List of seq 1 to n
+
+MySeq:=proc(n)
+local i;
+[seq(i, i=1..10)];
+end:
+
+TestIf:=proc(n)
+if (n mod 2 = 0) then 
+	return("Even")
+else
+	return("Odd")
+fi:
+end:
+
+TestFor:=proc(n)
+local i, s;
+s:=0;
+for i from 1 to n do
+	s:= s + 1/i; 
+od:
+return(s);
+end:
+
+MaxA:=proc(A)
+local a, mx;
+mx:=A[1];
+for a in A do
+	if a > mx then
+		mx:=a;
+	fi:
+od:
+return(mx);
+end:
+
+SplitEO:=proc(A)
+local a, E, O;
+E:={};
+O:={};
+for a in A do
+	if a mod 2 = 0 then
+		E:= E union {a}
+	else
+		O:= O union {a}
+	fi:
+od:
+return([E,O]);
+end:
+
+TwoAdd:=proc(A, k)
+local S, a, b;
+S:={};
+for a in A do
+	for b in A do
+		if a <> b then
+			if a + b = k then
+				S:= S union {{a, b}}
+			fi:
+		fi:
+	od:
+od:
+return(S);
+end:
