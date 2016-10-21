@@ -6,3 +6,39 @@ for i from 1 to nops(A) do
 od:
 return(C);
 end:
+
+# ------------------------------------------------------------------
+
+Ramanujan:=proc(N)
+local i, t;
+t:=sqrt(1 + N);
+for i from N by -1 to 2 do
+	t:= sqrt( 1 + i * t )
+od:
+return t;
+end:
+
+# ------------------------------------------------------------------
+
+BirthDay:=proc(n)
+local S, roll;
+roll:=rand(1..365);
+S:={seq(roll(),i=1..n)};
+return(evalb(nops(S) < n));
+end:
+
+
+# -- -- --
+
+ProbBirthDay:=proc(n, T)
+local c, i;
+c:=0;
+for i from 1 to T do
+	if BirthDay(n) then
+		c:= c + 1;
+	fi:
+od:
+return(c/T);
+end:
+
+# ------------------------------------------------------------------

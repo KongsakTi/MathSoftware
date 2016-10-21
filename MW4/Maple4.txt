@@ -1,0 +1,83 @@
+ReverseList:=proc(A)
+local n;
+
+n:=nops(A);
+return([seq(A[n-i],i=0..n-1)]);
+end:
+
+countDigit:=proc(n)
+local digit;
+digit:= 0;
+while n >= 10^digit do
+	digit:= digit + 1;
+od:
+return(digit)
+end:
+
+# ------------------------------------------------------------------
+
+NumToList:=proc(A)
+local lst, digit, i, B, C;
+
+C:= A;
+digit:=countDigit(A);
+lst:= [];
+
+while digit > 0 do
+	B := C - (C mod 10^(digit - 1));
+	lst := [op(lst), B/10^(digit-1)];
+	digit := digit - 1;
+	C := C - B;
+od:
+
+return(lst);
+end:
+
+# ------------------------------------------------------------------
+
+Germain:=proc(N)
+local i, S;
+S:= [];
+for i from 1 to N do
+	if isprime(i) and isprime(2*i+1) then
+		S:=[op(S), i];
+	fi:
+od:
+return(S);
+end:
+
+# ------------------------------------------------------------------
+
+LastVisit:=proc(m)
+local S, p, R, roll;
+S:={0};
+p:=0;
+roll:=rand(0..1):
+
+while nops(S) <= m do
+	R:=roll();
+	if R = 0 and p > 0 then
+		p:=p-1;
+	elif R = 0 and p = 0 then
+		p:=m;
+	elif R = 1 and p < m then
+		p:=p+1;
+	elif R = 1 and p = m then
+		p:=0;
+	fi:
+	S:= S union {p};
+od:
+return(p);
+end:
+
+# -- -- --
+
+simul:=proc(m, N)
+local freq, i, lastVisited;
+freq:=[seq(0, i=1..m)];
+for i from 1 to N do
+	lastVisited:= LastVisit(m);
+	freq[lastVisited]:= freq[lastVisited] + 1;
+od:
+return(freq/N);
+end:

@@ -1,0 +1,64 @@
+Ramanujan := proc(k, N)
+local a,b,S,T;
+S:=[];
+T:={};
+
+for a from 1 to floor(N^(1/k)) do
+	for b from 1 to min(a, floor((N-a^k)^(1/k))) do
+		S:= [op(S), a^k + b^k];
+	od:
+od:
+
+S:=sort(S);
+
+for a from 1 to nops(S)-1 do
+	if S[a] = S[a+1] then
+		T:=T union{S[a]}
+	fi:
+od:
+
+return(T);
+end:
+
+# -------------------------------
+
+MySeq := proc(k, N)
+local A, x, y;
+
+A := [seq(add(seq(x^k, x = 1 .. y)), y = 1 .. 10)];
+
+return(A);
+end:
+
+GuessPol := proc(S, d, n)
+local i, a, Eqs, Vars, Sol;
+
+Eqs := {seq(S[i]=add(a[k]*i^k,k=0..d), i = 1..nops(S))};
+Vars := {seq(a[i],i=0..d)};
+Sol := solve(Eqs, Vars);
+
+if Sol = NULL then
+	return("No Solution");
+else
+	return(subs(Sol, add(a[k]*n^k, k=0..d)));
+fi:
+end:
+
+# -------------------------------
+
+SwitchMonty := proc(p)
+local roll, car, open, switch;
+
+roll:=rand(1..3);
+car:=roll();
+
+open:={1,2,3} minus {car,p};
+roll:=rand(1..nops(open));
+open:=open[roll()];
+
+switch:={1,2,3} minus {p,open};
+switch:=switch[1];
+
+return(evalb(switch=car));
+end:
+
