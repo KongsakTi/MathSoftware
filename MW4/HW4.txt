@@ -1,0 +1,32 @@
+Fermat:=proc(N)
+local x, y, z, val, f, S;
+#f:=(x,y)->x^3 + y^3 - 1;
+S:={};
+for x from 2 to N do
+	for y from 2 to x do
+		#val:= f(x,y)^(1/3);
+		val:=evalf((x^3 + y^3 - 1)^(1/3));
+		if val = floor(val) then
+			S:= S union {[x, y, floor(val)]}
+		fi:
+	od:
+od:
+return(S);
+end:
+
+# -------------------------------
+
+PrimeAP:=proc(p,k)
+local d, i, isPrime;
+d:=0;
+isPrime:=false;
+
+while(not isPrime) do
+	d:= d + 1;
+	isPrime:=true;
+	for i from 1 to k-1 do
+		isPrime:= isPrime and isprime(p + d*i);
+	od:
+od:
+return({seq(p + d*i, i=0..k-1)})
+end:
