@@ -1,0 +1,85 @@
+Fact := proc(n)
+
+if type(n, nonnegint) = false then 
+	ERROR("BadInput");
+fi:
+
+if n = 0 then
+	return(1);
+else
+	return n * Fact(n - 1);
+fi:
+end:
+
+
+# ------------------------------------------
+
+
+Fibo := proc(n) option remember;
+
+if type(n, nonnegint) = false then 
+	ERROR("BadInput");
+fi:
+
+if n <= 1 then
+	return(1);
+else
+	return Fibo(n - 1) + Fibo(n - 2);
+fi:
+end:
+
+# ------------------------------------------
+
+Walk1D := proc(n, p) option remember;
+if n = 0 then
+	return(1);
+fi:
+Walk1D(n - 1, p + 1) + Walk1D(n - 1, p - 1);
+end:
+
+# ------------------------------------------
+# output: Set of List of p
+
+ListWalk1D := proc(n, p) option remember;
+local a, S;
+if n = 0 then
+	return({[p]});
+fi:
+S := {seq( [p, op(a)], a in ListWalk1D(n - 1, p + 1))} union {seq( [p, op(a)], a in ListWalk1D(n - 1, p - 1))};
+return(S);
+end:
+
+# ------------------------------------------
+
+MainWalk1D := proc(n, p) option remember;
+return(ListWalk1D(n - 1, p + 1) union ListWalk1D(n - 1, p - 1));
+end:
+
+# ------------------------------------------
+
+NoWalk1D := proc(n, p) option remember;
+local a, S;
+if n = 0 then
+	if p = 0 then
+		return(1);
+	fi:
+	return(0);
+fi:
+return( NoWalk1D(n - 1, p + 1) + NoWalk1D(n - 1, p - 1))
+
+end:
+
+# ------------------------------------------
+
+Walk2D := proc(m, n) option remember;
+
+if m < 0 or n < 0 then
+	return(0);
+elif m = 0 and n = 0 then
+	return(1);
+fi:
+return( Walk2D(m - 1, n) + Walk2D(m, n - 1))
+
+end:
+
+# ------------------------------------------

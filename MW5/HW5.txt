@@ -1,0 +1,51 @@
+Lucas := proc(n) option remember;
+
+if type(n, nonnegint) = false then 
+	ERROR("BadInput");
+fi:
+
+if n = 0 then
+	return(2);
+elif n = 1 then
+	return(1);
+else
+	return Lucas(n - 1) + Lucas(n - 2);
+fi:
+end:
+
+# ------------------------------------------
+
+PW := proc(n, p) option remember;
+local a, S;
+if p < 0 then
+	return(0);
+elif n = 0 then
+	return(1);
+fi:
+return( PW(n - 1, p + 1) + PW(n - 1, p - 1))
+
+end:
+
+# ------------------------------------------
+
+Coupon := proc(n)
+
+local roll, S, p;
+
+S:={};
+roll:=rand(1..n);
+p:=0;
+
+while nops(S) < n do
+	S := S union {roll()};
+	p := p + 1;
+od:
+return(p);
+end:
+
+
+AvgCoupon := proc(n, N)
+local i;
+return(add(Coupon(n),i=1..N)/N);
+end:
+

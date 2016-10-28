@@ -1,0 +1,93 @@
+LTWalk:=proc(m,n) option remember;
+if m<0 or n<0 then
+    return(0);
+elif m=0 and n = 0 then
+    return(1);
+elif n>m then
+    return(0);
+fi:
+return(LTWalk(m-1,n)+LTWalk(m,n-1))
+end:
+
+
+# ------------------------------------------
+
+
+Coupon := proc(n)
+
+local roll, S, p;
+
+S:={};
+roll:=rand(1..n);
+p:=0;
+
+while nops(S) < n do
+	S := S union {roll()};
+	p := p + 1;
+od:
+return(p);
+end:
+
+
+AvgCoupon := proc(n, N)
+local i;
+return(add(Coupon(n),i=1..N)/N);
+end:
+
+# ------------------------------------------
+
+Couponn := proc(n)
+
+local s, roll, S, T, p;
+
+S:={};
+T:={};
+
+roll:=rand(1..n);
+p:=0;
+
+while (nops(S) + nops(T)) < (n*2) do
+	s := roll();
+	if member(s, S) then
+		T := T union {s};
+	else
+		S := S union {s};
+	fi:
+	p := p + 1;
+od:
+return(p);
+end:
+
+
+AvgCouponn := proc(n, N)
+local i;
+return(add(Couponn(n),i=1..N)/N);
+end:
+
+# ------------------------------------------
+
+Gambler:=proc(M, N, p)
+
+local roll;
+
+if M = N then
+	return(1);
+elif M = 0 then
+	return(0);
+fi:
+
+roll:=rand(1..100);
+
+
+if roll()/100 <= p then
+	return(Gambler(M + 1, N, p));
+else
+	return(Gambler(M - 1, N, p));
+fi:
+
+end:
+
+AvgGambler := proc(M, N, p, K)
+local i;
+return(evalf(add(Gambler(M,N,p), i=1..K))/K)
+end:
