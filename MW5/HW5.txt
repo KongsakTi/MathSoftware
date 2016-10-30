@@ -49,3 +49,35 @@ local i;
 return(add(Coupon(n),i=1..N)/N);
 end:
 
+# ------------------------------------------
+
+Couponn := proc(n)
+
+local s, roll, S, T, p;
+
+S:={};
+T:={};
+
+roll:=rand(1..n);
+p:=0;
+
+while (nops(S) + nops(T)) < (n*2) do
+	s := roll();
+	if member(s, S) then
+		T := T union {s};
+	else
+		S := S union {s};
+	fi:
+	p := p + 1;
+od:
+return(p);
+end:
+
+
+AvgCouponn := proc(n, N)
+local i;
+return(add(Couponn(n),i=1..N)/N);
+end:
+
+# ------------------------------------------
+

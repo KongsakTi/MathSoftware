@@ -30,3 +30,26 @@ while(not isPrime) do
 od:
 return({seq(p + d*i, i=0..k-1)})
 end:
+
+# -------------------------------
+
+SwitchMonty := proc(p)
+local roll, car1, car2, open, switch, doors;
+
+doors:={1,2,3,4,5};
+roll:=rand(1..nops(doors));
+car1:=roll();
+
+doors:={1,2,3,4,5} minus {car1};
+roll:=rand(1..nops(doors));
+car2:=roll();
+
+open:={1,2,3,4,5} minus {car1, car2, p};
+roll:=rand(1..nops(open));
+open:=open[roll()];
+
+switch:={1,2,3,4,5} minus {p,open};
+switch:=switch[1];
+
+return(evalb(switch=car1 or switch=car2));
+end:
