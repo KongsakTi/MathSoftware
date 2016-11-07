@@ -1,0 +1,35 @@
+Pancake:=proc(S)
+local a,n, Num, MyPancake;
+
+n:=nops(S);
+MyPancake:=S;
+
+for Num from n by -1 to 2 do
+  a:=Loc(MyPancake, Num);
+  if a <> 1 then
+    MyPancake:=Flip(MyPancake,a);
+    print(MyPancake);
+  fi:
+  print(MyPancake);
+  MyPancake:=Flip(MyPancake,Num);
+od:
+return(MyPancake);
+end:
+
+# -----------------------------------
+
+Flip:=proc(S,k)
+[seq(S[k+1-i],i=1..k),seq(S[i],i=k+1..nops(S))];
+end:
+
+# -----------------------------------
+
+Loc:=proc(S,a)
+local i;
+for i from 1 to nops(S) do
+    if S[i] = a then
+        return(i);
+    fi:
+od:
+ERROR("BadInput");
+end:
