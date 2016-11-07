@@ -1,0 +1,121 @@
+Gambler:=proc(M, N, p)
+
+local roll;
+
+if M = N then
+	return(1);
+elif M = 0 then
+	return(0);
+fi:
+
+roll:=rand(1..100);
+
+
+if roll()/100 <= p then
+	return(Gambler(M + 1, N, p));
+else
+	return(Gambler(M - 1, N, p));
+fi:
+
+end:
+
+# --------------------------------
+
+AvgGambler := proc(M, N, p, K)
+local i;
+return(evalf(add(Gambler(M,N,p), i=1..K))/K)
+end:
+
+# --------------------------------
+
+Ellen := proc(M,G,E,p)
+
+local roll;
+
+if M = G then
+	return(1);
+elif M = E then
+	return(0);
+fi:
+
+roll:=rand(1..100);
+
+if roll()/100 <= p then
+	return(Ellen(M + 1, G, E, p));
+else
+	return(Ellen(M - 1, G, E, p));
+fi:
+
+end:
+
+# --------------------------------
+
+AvgEllen := proc(M, G, E, p, N)
+local i;
+return(evalf(add(Ellen(M,G,E,p), i=1..N))/N)
+end:
+
+FirstDigit:=proc(n)
+local a;
+
+a:=n;
+while a>= 10 do:
+    a:= a/10;
+od:
+return(floor(a));
+end:
+
+RandomBenford:=proc(N,k)
+local roll,i,B;
+B:=N;
+
+for i from 1 to k do:
+    roll:=rand(1..B);
+    B:=roll();
+
+od:
+return(B);
+end:
+
+Benford:=proc()
+local N,k,Sam;
+N:=10^20;
+k:=10;
+Sam := RandomBenford(N,k);
+return(FirstDigit(Sam));
+end:
+
+SimBenford:=proc(n)
+local A,i,k;
+A:=[0$9];
+for i from 1 to n do:
+    k:=Benford();
+    A[k] := A[k]+1;
+od:
+return(evalf(A/n));
+end:
+
+
+Fibo := proc(n) option remember;
+
+if type(n, nonnegint) = false then
+	ERROR("BadInput");
+fi:
+
+if n <= 1 then
+	return(1);
+else
+	return Fibo(n - 1) + Fibo(n - 2);
+fi:
+end:
+
+SimBenfibo:=proc(n)
+
+local A, i, k;
+A:=[0$9];
+for i from 1 to n do:
+	k:=FirstDigit(Fibo(i));
+	A[k]:=A[k]+1;
+od:
+return(evalf(A/n));
+end:

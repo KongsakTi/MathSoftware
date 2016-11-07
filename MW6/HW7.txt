@@ -1,0 +1,12 @@
+TMMGambler := proc(M, N, p)
+local mat, i;
+
+mat := Matrix([[0$(N + 1)]$(N + 1)]);
+mat[1,1] := 1;
+mat[N + 1, N + 1] := 1;
+for i from 2 to N do
+  mat[i, i - 1] := 1 - p;
+  mat[i, i + 1] := p;
+od:
+return (mat^100)[M+1,N+1];
+end:
