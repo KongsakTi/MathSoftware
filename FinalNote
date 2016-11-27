@@ -41,3 +41,22 @@ function(...) {
 
   }
 }
+
+hist([col], prob=T, ylim=c(0,0.04), main="His of Dia")
+lines(density([col]))
+
+lmod = lm(X1 ~ X2, dat)
+summary(lmod)
+anova(lmodH, lmod)
+confint(lmod, level=0.95)
+
+plot(dat$X1, , xlab="observation", ylab="data", ylim=c(min(dat$X1, lmod$fitted.values), max(dat$X1, lmod$fitted.values)))
+lines(lmod$fitted.values, col="red")
+points(lmod$fitted.values, col="red", pch=16)
+
+plot(dat2$X1, , xlab="observation", ylab="data", ylim=c(min(dat2$X1, lmod21$fitted.values, lmod22$fitted.values), max(dat2$X1, lmod21$fitted.values, lmod22$fitted.values)))
+lines(lmod21$fitted.values, col="red")
+points(lmod21$fitted.values, col="red", pch=16)
+
+lines(lmod22$fitted.values, col="blue")
+points(lmod22$fitted.values, col="blue", pch=16)
