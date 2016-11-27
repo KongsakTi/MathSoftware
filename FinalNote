@@ -1,0 +1,43 @@
+read.table=(file=[dir], header=[T/F], sep=["", ...]), nrows=[int], skip=[int], col.names=[c(...)], row.names=[c(...)])
+write.table=([var], file=[dir], sep=[" ", ...], row.names=[T/F], col.names=[T/F])
+
+read.spss([dir])
+data.frame(read.spss([dir]))
+
+[read/write].[table/csv]
+
+library(foreign)
+
+names([var])
+
+dim([var])
+
+matrix(c(...), nrow=[int], ncol=[int], byrow=[T/F])
+array(c(...), dim=c(...))
+
+Boolean Indexing: var[condi]
+
+Indexes: which(condi)
+
+sapply(x, mean)
+lapply(x, mean)
+vapply(x, quantile)
+
+vapply(x, mean,c("Mean"=0))
+tapply([col, col, ...], [func])
+
+var$col = ifelse(condi, val_T, val_F)
+
+merge(x, y, by=[condi], ...)
+
+seq(from, to, by=[inc])
+
+numeric([size], ...)
+
+function(...) {
+  return(c("..." = var))
+
+  for (i in from: to) {
+
+  }
+}
