@@ -60,3 +60,9 @@ points(lmod21$fitted.values, col="red", pch=16)
 
 lines(lmod22$fitted.values, col="blue")
 points(lmod22$fitted.values, col="blue", pch=16)
+
+Beta = (X' X)^(-1) X' y
+x <- model.matrix(~ [col, ...], [data])
+y <- data$[y]
+xtxi <- solve(t(x) %*% x)
+xtxi %*% t(x) %*% y
