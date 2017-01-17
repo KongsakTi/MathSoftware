@@ -1,12 +1,12 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.9.17)  5 OCT 2016 23:49
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.9.17)  17 JAN 2017 23:54
  restricted system commands enabled.
 **sidebar.tex
 (./sidebar.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 ! Undefined control sequence.
-l.1 \cvsection
-            {Highlight Courses}{\faBook}
+l.11 \cvsection
+             {Career Objective}{\faBarChart}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -20,14 +20,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \cvsection{H
-              ighlight Courses}{\faBook}
+l.11 \cvsection{C
+               areer Objective}{\faBarChart}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.1 \cvsection{Highlight Courses}{\faBook
-                                       }
+l.11 \cvsection{Career Objective}{\faBarChart
+                                           }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -35,27 +35,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
-[]Highlight
+Overfull \hbox (20.0pt too wide) in paragraph at lines 11--12
+[]Career
  []
-
-! Undefined control sequence.
-l.3 \cvachievement
-                {\faCertificate}{Pattern Recognition}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.3 \cvachievement{\faCertificate
-                               }{Pattern Recognition}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 ! LaTeX Error: Missing \begin{document}.
@@ -64,159 +46,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 \cvachievement{\faCertificate}{P
-                                  attern Recognition}{}
+l.13 A
+    s\, a\, person\, who\, interested\, in\, programming,\, mathematic,\, ec...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
-[]Pattern
+Overfull \hbox (20.0pt too wide) in paragraph at lines 13--15
+[]As
  []
 
 ! Undefined control sequence.
-l.6 \divider
-          
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.8 \cvachievement
-                {\faCertificate}{Agile Programming}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.8 \cvachievement{\faCertificate
-                               }{Agile Programming}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 \cvachievement{\faCertificate}{A
-                                  gile Programming}{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 8--9
-[]Agile
- []
-
-! Undefined control sequence.
-l.10 \divider
-           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 \cvachievement
-                 {\faCertificate}{Linear Algebra}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 \cvachievement{\faCertificate
-                                }{Linear Algebra}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \cvachievement{\faCertificate}{L
-                                   inear Algebra}{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 12--13
-[]Linear
- []
-
-! Undefined control sequence.
-l.14 \divider
-           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.16 \cvachievement
-                 {\faCertificate}{Risk Management}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.16 \cvachievement{\faCertificate
-                                }{Risk Management}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 \cvachievement{\faCertificate}{R
-                                   isk Management}{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 16--17
-[]Risk
- []
-
-! Undefined control sequence.
-l.18 \divider
-           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.22 \cvsection
+l.29 \cvsection
              {Achievement}{\faTrophy}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -231,13 +72,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \cvsection{A
+l.29 \cvsection{A
                chievement}{\faTrophy}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.22 \cvsection{Achievement}{\faTrophy
+l.29 \cvsection{Achievement}{\faTrophy
                                     }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -246,12 +87,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 22--23
+Overfull \hbox (20.0pt too wide) in paragraph at lines 29--30
 []Achievement 
  []
 
 ! Undefined control sequence.
-l.24 \cvachievement
+l.31 \cvachievement
                  {\faBookmark}{ACM-ICPC Programming Contest}{Multi-tiered co...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -260,7 +101,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.24 \cvachievement{\faBookmark
+l.31 \cvachievement{\faBookmark
                              }{ACM-ICPC Programming Contest}{Multi-tiered co...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -275,37 +116,37 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 \cvachievement{\faBookmark}{A
+l.31 \cvachievement{\faBookmark}{A
                                 CM-ICPC Programming Contest}{Multi-tiered co...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 24--25
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--32
 []ACM-ICPC
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 26.
+(Font)              <7> on input line 33.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 26.
+(Font)              <5> on input line 33.
 
-Overfull \hbox (18.20262pt too wide) in paragraph at lines 26--27
+Overfull \hbox (18.20262pt too wide) in paragraph at lines 33--34
 \OT1/cmr/m/n/10 15[]$
  []
 
 
-Overfull \hbox (18.20262pt too wide) in paragraph at lines 27--28
+Overfull \hbox (18.20262pt too wide) in paragraph at lines 34--35
 \OT1/cmr/m/n/10 37[]$
  []
 
 
-Overfull \hbox (18.20262pt too wide) in paragraph at lines 27--28
+Overfull \hbox (18.20262pt too wide) in paragraph at lines 34--35
 ($\OT1/cmr/m/n/10 12[]$
  []
 
 ! Undefined control sequence.
-l.30 \divider
+l.37 \divider
            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -314,8 +155,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.32 \cvachievement
-                 {\faBookmark}{Young Financial Star Competition}{Financial p...
+l.39 \cvachievement
+                 {\faBookmark}{Stock Trading Algorithm}{Senior Project.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -323,31 +164,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.32 \cvachievement{\faBookmark
-                             }{Young Financial Star Competition}{Financial p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 32--33
-[]Young
- []
-
-! Undefined control sequence.
-l.39 \cvsection
-             {Interest}{\faThumbsUp}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.39 \cvsection{Interest}{\faThumbsUp
-                                   }
+l.39 \cvachievement{\faBookmark
+                             }{Stock Trading Algorithm}{Senior Project.}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -356,11 +174,34 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 39--40
+[]Stock
+ []
+
+! Undefined control sequence.
+l.48 \cvsection
+             {Interest}{\faThumbsUp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.48 \cvsection{Interest}{\faThumbsUp
+                                   }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 48--49
 []Interest 
  []
 
 ! Undefined control sequence.
-l.41 \wheelchart
+l.50 \wheelchart
               {1.5cm}{0.5cm}{%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -369,12 +210,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 41--48
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--57
 []1.5cm0.5cm6/5.5em/Red!100/Machines
  []
 
 ! Undefined control sequence.
-l.67 \cvsection
+l.76 \cvsection
              {Languages}{\faComments}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -383,7 +224,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.67 \cvsection{Languages}{\faComments
+l.76 \cvsection{Languages}{\faComments
                                     }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -392,12 +233,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 67--68
+Overfull \hbox (20.0pt too wide) in paragraph at lines 76--77
 []Languages 
  []
 
 ! Undefined control sequence.
-l.71 \cvskill
+l.80 \cvskill
            {Thai}{5}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -406,12 +247,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 71--72
+Overfull \hbox (20.0pt too wide) in paragraph at lines 80--81
 []Thai5 
  []
 
 ! Undefined control sequence.
-l.73 \divider
+l.82 \divider
            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -420,45 +261,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.75 \cvskill
+l.84 \cvskill
            {English}{4}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 75--76
-[]English4 
- []
-
-! Undefined control sequence.
-l.77 \divider
-           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.79 \cvskill
-           {Chinese}{2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 79--80
-[]Chinese2 
- []
-
-! Undefined control sequence.
-l.81 \divider
-           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -475,11 +279,11 @@ and I'll forget about whatever was undefined.
 
 Here is how much of LuaTeX's memory you used:
  22 strings out of 495119
- 100000,89155 words of node,token memory allocated 6184 words of node memory still in use:
-   59 hlist, 17 local_par, 1 dir, 4 math, 188 glue, 42 penalty, 642 glyph, 32 gl
-ue_spec nodes
-   avail lists: 2:12,4:12,5:5,7:2,8:4,10:11
+ 100000,89155 words of node,token memory allocated 8851 words of node memory still in use:
+   54 hlist, 15 local_par, 1 dir, 4 math, 260 glue, 50 kern, 38 penalty, 972 gly
+ph, 32 glue_spec, 1 temp nodes
+   avail lists: 2:12,4:50,5:5,8:4,10:49
  3676 multiletter control sequences out of 65536+600000
  25 fonts using 1045927 bytes
- 18i,2n,12p,150b,107s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 18i,2n,12p,217b,107s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, no output PDF file produced!

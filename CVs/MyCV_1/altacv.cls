@@ -108,7 +108,7 @@
   \textbf{\color{headingSub}#2}\par
   \smallskip
   {\color{icons}\faCalendar}{\small\makebox[0.5\linewidth][l]{\hspace{0.5em}#3}%
-  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{{\color{icons}\faMapMarker}\hspace{0.5em}#4}}\par}
+  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{{\hspace{0.5em}\color{icons}\faMapMarker}\hspace{0.5em}#4}}\par}
   \medskip
 }
 
